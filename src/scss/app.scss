@@ -1,0 +1,7 @@
+@forward "base";
+//@import Si importo dos veces lo mismo no evita tener codigo duplicado, use si
+//@forward se usa cuando quiero tarer todo el contenido de una hoja de estilos, ej: normalize
+//@Use es el clasico
+
+//Este formato sirve para saber el orden y de donde se esta importando
+@forward "layout";

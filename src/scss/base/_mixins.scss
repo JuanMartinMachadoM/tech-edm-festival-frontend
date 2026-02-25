@@ -1,0 +1,44 @@
+@use "variables" as v;
+
+@mixin telefono {  //Para que sea responsive, se puede reutilizar. Es mas facil de mantener
+    @media (min-width: v.$telefono) {
+        @content; //Es el que hace que el contenido este dentro del mq
+    }
+}
+
+@mixin tablet {  //Para que sea responsive, se puede reutilizar. Es mas facil de mantener
+    @media (min-width: v.$tablet) {
+        @content; //Es el que hace que el contenido este dentro del mq
+    }
+}
+
+@mixin desktop {  //Para que sea responsive, se puede reutilizar. Es mas facil de mantener
+    @media (min-width: v.$desktop) {
+        @content; //Es el que hace que el contenido este dentro del mq
+    }
+}
+
+@mixin desktopXL {  //Para que sea responsive, se puede reutilizar. Es mas facil de mantener
+    @media (min-width: v.$desktopXL) {
+        @content; //Es el que hace que el contenido este dentro del mq
+    }
+}
+
+@mixin contenedor{
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+@mixin grid($columnas, $gap: 5rem){ //Me permite editar la cantiad de columnas. Se las paso como variable.
+    //En caso de que no se pase el gap usa 5 rem por default
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $gap;
+}
+
+@mixin resetear-lista{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

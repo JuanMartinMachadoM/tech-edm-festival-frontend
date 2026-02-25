@@ -1,0 +1,48 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+@use "sass:color"; //Cambio agregado por mi
+
+.video {
+    position: relative; //Da como referencai posicion del padre 
+    min-height: 50rem;
+    max-height: 70rem;
+    overflow: hidden; //Esconde lo que sobra 
+    .overlay{
+        position: absolute;
+        background: linear-gradient(
+            270deg,
+            rgba(v.$morado, 60%),
+            rgba(color.adjust(v.$morado, $lightness: -20%), 90%) 
+        ); // el ultimo es un cambio sugerido
+        inset: 0;
+
+        display: flex;
+        align-items: center;
+    }
+    video{
+        display: block;
+        width: auto;
+        @include m.desktop{
+            width: 100%;
+        }
+    }
+}
+
+.contenedor-video{
+    z-index: 10; //Se controla que elemento se muestra adelante del otro
+
+    h2{
+        color: v.$blanco;
+        font-size: 7rem;
+        margin: 0;
+    }
+
+    p{
+        display: inline-block;
+        padding: 1rem 2rem;
+        background-color: v.$rosa;
+        color: v.$blanco;
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+}
