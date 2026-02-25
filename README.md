@@ -1,6 +1,6 @@
 # 🎵 Tech & EDM Festival – Frontend Project
 
-Landing page de un festival de música desarrollada con HTML, SASS y automatización con Gulp.
+Este proyecto consiste en el landing page de un festival de música desarrollada con HTML, SASS y automatización con Gulp. Se desarrollo como parte de un curso de desarrollo web, con el objetivo de practicar maquetación, estilos y navegación entre secciones.
 
 ## 🌐 Demo online
 
