@@ -2,7 +2,14 @@
 
 Landing page de un festival de música desarrollada con HTML, SASS y automatización con Gulp.
 
-## 🌐 Características
+## 🌐 Demo online
+
+Podés ver el proyecto funcionando acá:  
+👉 https://techno-festival-jm.netlify.app/
+
+---
+
+## 📚 Características
 
 - Maquetación moderna y responsive
 - Video background optimizado (mp4, webm, ogv)
@@ -17,12 +24,3 @@ Landing page de un festival de música desarrollada con HTML, SASS y automatizac
 - Gulp
 - Node.js
 - JavaScript
-
-## 🚀 Cómo ejecutar
-
-1. Instalar dependencias:
-   ```bash
-   npm install
-2. Bash:
-   npm run dev
-3. Abrir index.html en el navegador.
